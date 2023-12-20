@@ -18,6 +18,10 @@ class Menu {
     };
   }
 
+  static tambahMakanan(makanan) {
+    Menu.makanan.push(makanan);
+  }
+
   static lihatMenu(jenis) {
     if (jenis === "makanan") {
       Menu.makanan.forEach((makanan, index) => {
